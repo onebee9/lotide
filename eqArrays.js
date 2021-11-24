@@ -6,20 +6,20 @@ const assertEqual = function(actual, expected) {
   }
   return;
 };
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual(1, 2);
+// assertEqual("Lighthouse Labs", "Bootcamp");
+// assertEqual(1, 1);
+// assertEqual(1, 2);
   
 const eqArrays = function(arr1,arr2) {
 // if length is not equal
   if (arr1.length !== arr2.length) {
-    return "False";
+    return false;
   } else {
     // comparing each element of array
     for (let i = 0; i < arr1.length; i++)
       if (arr1[i] !== arr2[i])
-        return "False";
+        return false;
   }
-  return "True";
+  return true;
 };
 console.log(assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true)); // => should PASS
