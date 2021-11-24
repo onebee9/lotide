@@ -19,7 +19,3 @@ else {
     console.log(`These arrays are not equal`);
 }
 };
-
-console.log(assertArraysEqual([234,2,3,4],[234,2,3,4]));
-console.log(assertArraysEqual([23,2,3,4],[234,2,3,4]));
-console.log(assertArraysEqual([23,2,3,4],[234,2,3,5]));
