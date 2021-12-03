@@ -3,9 +3,9 @@ function takeUntil(data, callback){
     data.every(element => {
         if(!callback(element)){
             response.push(element);
-            return true;
+            return true; 
         }else{
-            return false;
+            return false;// breaks "every" loop
         }
     });
 
