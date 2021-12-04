@@ -1,5 +1,10 @@
 const tail = require('../tail');
 const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-assertEqual(words.length, 3); // original array should still have 3 elements!
+const words = ["Yo Yo", "Lighthouse", "Labs"];//sample array
+describe("#tail", () => {
+    it("Length of array should equal 3", () => {
+      assert.strictEqual(words.length, 3);
+    });
+  });
