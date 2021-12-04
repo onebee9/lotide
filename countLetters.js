@@ -10,6 +10,8 @@ const countLetters = function(str) {
   return results;
 };
 
+
+
 console.log(countLetters('miami'));
 console.log(countLetters('faaaaaaaaaam'));
 
