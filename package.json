@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@onebee9/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Completed as part of a lighthouselabs assessment",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
