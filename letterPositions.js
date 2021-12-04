@@ -1,23 +1,25 @@
-const eqArrays = require ('../eqArrays');
-const assertArraysEqual = require ('../assertArraysEqual');
+// const eqArrays = require ('../eqArrays');
+// const assertArraysEqual = require ('../assertArraysEqual');
 
-const letterPositions = function(sentence) {
-  let letters = [];
-  let found;
-  for(var i = 0; i < sentence.length; i++) {//step 1
-    if (letters.includes(sentence[i])){ // checking if the elements of an array exist in the same
-      console.log(sentence[i]);
-      found = letters.findIndex(sentence[i]);
-      letters[found].push(i); 
-    }else {
-        letters.push[found].push(i);
-      }
-      //letters[sentence[i]].push(i);
+const letterPositions = function(word){
+    let letters = {};
+
+    for(let i = 0; i < word.length; i++){
+        if(word[i] in letters){
+           let existing_index_array = letters[word[i]];
+           existing_index_array.push(i);
+           letters[word[i]] = existing_index_array;
+        }
+
+        else{
+            let index_array = [];
+            index_array.push(i);
+            letters[word[i]] = index_array;
+        }
     }
-  return letters;
+
+    return letters;
 };
 
 console.log(letterPositions('miamivice'));
 module.exports = letterPositions;
-
-
