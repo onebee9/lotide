@@ -21,9 +21,3 @@ describe("#middle", () => {
         assert.deepEqual(middle(['a', 'b']),[]);
     });
   });
-
-// console.log(middle(['a', 'b', 'c', 'd', 'e', 'f']));
-// console.log(middle(['a', 'b', 'c', 'd', 'e', 'f','g','h']));
-// console.log(middle(['a', 'b', 'c', 'd', 'e', 'f','g','h','i']));
-// console.log(middle(['a', 'b', 'c', 'd', 'e']));
-// console.log(middle(['a', 'b']));

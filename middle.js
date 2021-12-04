@@ -17,6 +17,5 @@ let result = [];
     }
 return result;
 };
-console.log(middle(['a', 'b', 'c', 'd', 'e', 'f']));
-console.log(middle(['a', 'b', 'c', 'd', 'e', 'f','g','h']));
+
 module.exports = middle;

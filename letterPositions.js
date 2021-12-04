@@ -1,31 +1,23 @@
-const eqArrays = function(arr1,arr2) {
-    // if length is not equal
-      if (arr1.length !== arr2.length) {
-        return false;
-      } else {
-        // comparing each element of array
-        for (let i = 0; i < arr1.length; i++)
-          if (arr1[i] !== arr2[i])
-            return false;
-      }
-      return true;
-    };
-
-const assertArraysEqual = function(arr1,arr2) {
-if (eqArrays(arr1,arr2)){
-    console.log(`These arrays are equal`);
-}
-else {
-    console.log(`These arrays are not equal`);
-}
-};
+const eqArrays = require ('../eqArrays');
+const assertArraysEqual = require ('../assertArraysEqual');
 
 const letterPositions = function(sentence) {
-let indices = [];
-for(var i = 0; i < sentence.length; i++) {
- if (sentence[i] === "m") indices.push(i);
-}
-return indices;
+  let letters = [];
+  let found;
+  for(var i = 0; i < sentence.length; i++) {//step 1
+    if (letters.includes(sentence[i])){ // checking if the elements of an array exist in the same
+      console.log(sentence[i]);
+      found = letters.findIndex(sentence[i]);
+      letters[found].push(i); 
+    }else {
+        letters.push[found].push(i);
+      }
+      //letters[sentence[i]].push(i);
+    }
+  return letters;
 };
 
-  console.log(letterPositions('miamivice'));
+console.log(letterPositions('miamivice'));
+module.exports = letterPositions;
+
+
